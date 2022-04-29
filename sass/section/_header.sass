@@ -1,0 +1,45 @@
+header
+    display: flex
+    justify-content: center
+    background-color: $main-black
+    width: 100%
+    height: 100%
+
+.header
+    display: flex
+    justify-content: center
+    flex-direction: row
+    width: 1200px
+    height: 100%
+    border: 2px solid red
+    &-main
+        border: 2px solid purple
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &__title
+            font-weight: 400
+            font-size: 56px
+            line-height: 66px
+        &__rule
+            font-weight: 400
+            font-size: 32px
+            line-height: 38px
+    &-lang
+        border: 2px solid blue
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        align-content: flex-end
+        &__ru
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__en
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
