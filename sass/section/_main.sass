@@ -1,0 +1,74 @@
+section
+    display: flex
+    justify-content: center
+    align-items: center
+.main
+    width: 1200px
+    height: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    &-message
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        gap: 40px
+        &__btn-reset
+            width: 200px
+    &-check
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        &__secret
+            display: flex
+            justify-content: center
+            align-items: center
+            background: $font-black
+            border-radius: 18px
+            width: 90px
+            height: 80px
+            &-num
+                font-weight: 400
+                font-size: 56px
+                line-height: 66px
+        &__guess
+            text-align: center
+            width: 200px
+            height: 120px
+            margin-top: 45px
+            margin-bottom: 35px
+            border: 3px solid $font-black
+            border-radius: 10px
+            font-size: 56px
+            cursor: help
+        &__btn
+    &-score
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+        padding-left: 60px
+
+.font-alt
+    color: $font-black
+    font-weight: 400
+    font-size: 36px
+    line-height: 42px
+
+button
+    cursor: pointer
+    width: 240px
+    height: 61px
+    background: $font-black
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.25)
+    border: 2px solid transparent
+    border-radius: 20px
+    color: $main-white
+    font-weight: 400
+    font-size: 42px
+    line-height: 49px
+    &:hover
+        border: 2px solid #cacaca
+        background: #4F4F4F
+        border-color: $font-black

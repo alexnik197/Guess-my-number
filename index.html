@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header-container">
             <div class="header">
                 <div class="header-main">
                     <span class="header-main__title">Guess my number</span>
@@ -33,6 +33,30 @@
             <!-- .header -->
         </div>
     </header>
+    <section>
+        <div class="container">
+            <div class="main">
+                <div class="main-message">
+                    <span class="main-message__text font-alt">🏆Correct number! </span>
+                    <button class="main-message__btn-reset">Reset</button>
+                </div>
+                <!-- /.main-message -->
+                <div class="main-check">
+                    <div class="main-check__secret"><span class="main-check__secret-num">?</span></div>
+                    <input type="number" class="main-check__guess">
+                    <button class="main-check__btn">Check!</button>
+                </div>
+                <!-- /.main-check -->
+                <div class="main-score">
+                    <p class="main-score__score font-alt">💣 Score: <span class="main-score__score-num">20</span></p>
+                    <p class="main-score__highscore font-alt">🥇 Highscore: <span class="main-score__highscore-num">0</span></p>
+                </div>
+                <!-- /.main-score -->
+            </div>
+            <!-- .main -->
+        </div>
+        <!-- /.container -->
+    </section>
 </body>
 
 </html>
