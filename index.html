@@ -18,7 +18,7 @@
                     <span class="header-main__rule">(Between 1 and 20)</span>
                 </div>
                 <!-- .header-main -->
-                <div class="header-lang">
+                <!-- <div class="header-lang">
                     <div class="header-lang__ru">
                         <img class="header-lang__ru-img" src="/img/flag-ru.png" alt="Russian flag">
                         <span class="header-lang__ru-text">Ru</span>
@@ -27,7 +27,7 @@
                         <img class="header-lang__en-img" src="/img/flag-usa.png" alt="USA flag">
                         <span class="header-lang__en-text">En</span>
                     </div>
-                </div>
+                </div> -->
                 <!-- .header-lang -->
             </div>
             <!-- .header -->
@@ -37,14 +37,15 @@
         <div class="container">
             <div class="main">
                 <div class="main-message">
-                    <span class="main-message__text font-alt">🏆Correct number! </span>
+                    <span class="main-message__text font-alt">🧐 Type a number...</span>
                     <button class="main-message__btn-reset">Reset</button>
                 </div>
                 <!-- /.main-message -->
                 <div class="main-check">
-                    <div class="main-check__secret"><span class="main-check__secret-num">?</span></div>
-                    <input type="number" class="main-check__guess">
-                    <button class="main-check__btn">Check!</button>
+                    <div class="main-check__secret"><span class="main-check__secret-num" id="secret-num">?</span></div>
+                    <input type="number" class="main-check__guess" id="input">
+                    <button class="main-check__btn-check" id="btn-check">Check!</button>
+                    <button class="main-check__btn-continue btn-hide" id="btn-cont">Continue!</button>
                 </div>
                 <!-- /.main-check -->
                 <div class="main-score">
@@ -59,4 +60,13 @@
     </section>
 </body>
 
+<script src="/script.js"></script>
 </html>
+
+
+<!-- add JS Functionality -->
+<!-- Переписать повторяющийся код и внести его в миксины flixible -->
+<!-- Адаптивная версия под
+    планшет
+    телефон -->
+<!-- Переписать вызов с громоздких классов, в короткие и понятные идентификаторы -->
