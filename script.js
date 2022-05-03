@@ -53,6 +53,7 @@ document.querySelector('#btn-cont').addEventListener('click', function (){
     document.querySelector('.main-check__secret').style.width = '90px';
     secretNum = Math.trunc(Math.random() * 20) + 1;
     document.querySelector('.main-check__secret-num').textContent = '?';
+    document.querySelector('.main-message__text').textContent = `🧐 Type a number...`;
 });
 
 

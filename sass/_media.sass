@@ -1,0 +1,131 @@
+@media (max-width: 1200px)
+    .header
+        max-width: 960px
+    .main
+        max-width: 960px
+    .font-alt
+        font-size: 32px
+        line-height: 36px
+
+@media (max-width: 992px)
+    .header
+        max-width: 720px
+    .main
+        max-width: 720px
+    .font-alt
+        font-size: 28px
+        line-height: 32px
+    button
+        width: 160px
+        height: 40px
+        font-size: 28px
+        line-height: 32px
+    .main
+        grid-template-columns: 260px 1fr 1fr
+        &-message
+            &__btn-reset
+                height: 40px
+                width: 180px
+        &-check
+            &__secret
+                width: 80px
+                height: 70px
+                &-num
+                    font-size: 38px
+                    line-height: 46px
+            &__guess
+                width: 130px
+                height: 80px
+                font-size: 38px
+        &-score
+            padding-left: 10px
+
+@media (max-width: 768px)
+    .header
+        max-width: 568px
+        &-main
+            &__title
+                font-size: 38px
+                line-height: 46px
+            &__rule
+                font-size: 24px
+                line-height: 32px
+    .main
+        max-width: 568px
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 2fr
+        &-score
+            display: grid
+            padding-left: 0
+            grid-column-start: 1
+            grid-column-end: 3
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr
+            justify-self: center
+        &-check
+            &__guess
+                margin-top: 20px
+                margin-bottom: 20px
+    .font-alt
+        font-size: 28px
+        line-height: 32px
+
+@media (max-width: 576px)
+    .header
+        max-width: 320px
+        &-main
+            &__title
+                font-size: 38px
+                line-height: 46px
+            &__rule
+                font-size: 24px
+                line-height: 32px
+    .main
+        max-width: 320px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 25px
+        &-check
+            &__guess
+                margin-top: 15px
+                margin-bottom: 15px
+            &__secret
+                width: 65px
+                height: 60px
+                &-num
+                    font-size: 28px
+                    line-height: 32px
+        &-message
+            gap: 15px
+            &__btn-reset
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 160px
+                height: 30px
+                font-size: 24px
+                line-height: 28px
+
+        &-score
+            display: flex
+            flex-direction: column
+            gap: 15px
+            &__highscore
+                margin-top: 0
+                margin-bottom: 0
+            &__score
+                margin-top: 0
+                margin-bottom: 0
+    .font-alt
+        font-size: 24px
+        line-height: 28px
+    button
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 160px
+        height: 30px
+        font-size: 24px
+        line-height: 28px
