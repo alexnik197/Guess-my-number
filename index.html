@@ -26,20 +26,20 @@
         <div class="container">
             <div class="main">
                 <div class="main-message">
-                    <span class="main-message__text font-alt">🧐 Type a number...</span>
-                    <button class="main-message__btn-reset">Reset</button>
+                    <span class="main-message__text font-alt" id="message">🧐 Type a number...</span>
+                    <button class="main-message__btn-reset" id="btn-reset">Reset</button>
                 </div>
                 <!-- /.main-message -->
                 <div class="main-check">
-                    <div class="main-check__secret"><span class="main-check__secret-num" id="secret-num">?</span></div>
+                    <div class="main-check__secret" id="secret-box"><span class="main-check__secret-num" id="secret-num">?</span></div>
                     <input type="number" class="main-check__guess" id="input">
                     <button class="main-check__btn-check" id="btn-check">Check!</button>
                     <button class="main-check__btn-continue btn-hide" id="btn-cont">Continue!</button>
                 </div>
                 <!-- /.main-check -->
                 <div class="main-score">
-                    <p class="main-score__score font-alt">💣 Score: <span class="main-score__score-num">20</span></p>
-                    <p class="main-score__highscore font-alt">🥇 Highscore: <span class="main-score__highscore-num">0</span></p>
+                    <p class="main-score__score font-alt">💣 Score: <span class="main-score__score-num" id="score">20</span></p>
+                    <p class="main-score__highscore font-alt">🥇 Highscore: <span class="main-score__highscore-num" id="highscore">0</span></p>
                 </div>
                 <!-- /.main-score -->
             </div>
